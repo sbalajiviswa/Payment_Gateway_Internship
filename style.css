@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: initial;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+header {
+  background: linear-gradient(#f65b8788, #45505f71),
+    url(res/header_background.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-family: "Style Script", cursive;
+  font-size: 300%;
+  transition: 50ms;
+  padding-top: 20px;
+}
+a:hover {
+  color: #f7b39f;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  text-align: center;
+}
+.main-text {
+  font-size: 800%;
+  font-family: "Style Script", cursive;
+}
+.qoute {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 25px;
+  color: #f7b39f;
+}
+.section {
+  position: relative;
+  background-position: center;
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+}
+.section-about {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.739),
+      rgba(255, 255, 255, 0.616)
+    ),
+    url(res/about-us.jpg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.section-hunger {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.739),
+      rgba(255, 255, 255, 0.616)
+    ),
+    url(res/hunger.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.section-Donate {
+  background-color: #fcb9ed;
+}
+.about,
+.Donate,
+.hunger {
+  text-align: center;
+  width: 60%;
+  scroll-snap-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  margin: 20px 0px;
+  font-size: 200%;
+  text-transform: uppercase;
+  color: #f38e70;
+}
+.description {
+  text-align: justify;
+  font-family: "Rubik", sans-serif;
+  line-height: 170%;
+}
+.Donate-text {
+  font-family: "Roboto Slab", serif;
+  font-size: 250%;
+}
