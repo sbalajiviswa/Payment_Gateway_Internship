@@ -1,8 +1,0 @@
-/*font-family: 'Poppins', sans-serif;
-font-family: 'Roboto Slab', serif;
-font-family: 'Rubik', sans-serif;*/
-/*#F65B88
-#F7B39F
-#f38e70
-#FCB9ED
-*/

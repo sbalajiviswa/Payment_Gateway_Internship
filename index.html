@@ -1,10 +1,48 @@
 <!DOCTYPE html>
+<!--
+  This project is for Task 3 of Web and Mobile Development Tasks of 
+  Spark Internship in August 2021  
+  #GRIPAUGUST21
+  
+  Author: Balaji V
+  Language: HTML,CSS
+  IDE: Visual Studio Code
+  Payment Gateway: Razor pay
+
+ -->
 <html lang="en">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      font-size: 25px;
+      font-weight: 300;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      scroll-behavior: initial;
+    }
+    .clearfix {
+      zoom: 1;
+    }
+    .clearfix::after {
+      content: ".";
+      clear: both;
+      display: block;
+      height: 0;
+      visibility: hidden;
+    }
+  </style>
   <head>
-    <title>paymenet demo</title>
+    <title>Task 3</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,20 +53,41 @@
       href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
   </head>
   <body>
-    <header>
-      <div class="hero-text">
-        <span class="main-text">SI community</span><br /><span class="qoute"
+    <header
+      style="
+        background: linear-gradient(#f65b8788, #45505f71),
+          url(res/header_background.jpg);
+        scroll-snap-align: center;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+      "
+    >
+      <div
+        class="hero-text"
+        style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          width: 100%;
+          text-align: center;
+        "
+      >
+        <span class="main-text" style="font-size: 800%">SI community</span
+        ><br /><span class="qoute" style="color: #f7b39f"
           >Spread Love with Food</span
         ><br />
+        <!--Below is the link for payment gateway-->
         <a href="https://rzp.io/l/BpIPbWRVZ6">Donate Now </a>
       </div>
     </header>
+
     <div class="section section-about">
       <div class="about">
         <div class="title">About us:</div>
@@ -59,12 +118,88 @@
     </div>
     <div class="section section-Donate">
       <div class="Donate">
-        <div class="Donate-text">
+        <div class="Donate-text" style="font-size: 250%">
           Contribute as mush as you can. Ebery rupe you give will be used for
           serving the needy.
         </div>
+        <!--Below is the link for payment gateway-->
         <a href="https://rzp.io/l/BpIPbWRVZ6">Donate Now</a>
       </div>
     </div>
   </body>
 </html>
+<!--Style CSS-->
+<style>
+  .section {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 300%;
+    transition: 50ms;
+    padding-top: 20px;
+  }
+  a:hover {
+    color: #f7b39f;
+  }
+  .main-text,
+  .Donate-text,
+  a {
+    font-family: "Style Script", cursive;
+  }
+  .qoute,
+  .title {
+    font-family: "Roboto Slab", sans-serif;
+  }
+
+  .section-about {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.739),
+        rgba(255, 255, 255, 0.616)
+      ),
+      url(res/about-us.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .section-hunger {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.739),
+        rgba(255, 255, 255, 0.616)
+      ),
+      url(res/hunger.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .section-Donate {
+    background-color: #fcb9ed;
+  }
+  .about,
+  .Donate,
+  .hunger {
+    text-align: center;
+    width: 60%;
+    scroll-snap-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .title {
+    font-weight: 700;
+    margin: 20px 0px;
+    font-size: 200%;
+    text-transform: uppercase;
+    color: #f38e70;
+  }
+  .description {
+    text-align: justify;
+    font-family: "Rubik", sans-serif;
+    line-height: 170%;
+  }
+</style>
